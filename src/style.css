@@ -1,0 +1,397 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ubuntu', sans-serif;
+	color:  rgb(65, 44, 0);
+  /* background-image: url('../img/fondo-portafolio.jpg'); */
+  background-size: cover;
+  transition: background-image 1s;
+  background-attachment: fixed;
+  background-color: #f3efb8;
+} 
+
+#container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+#menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  width: 100%;
+  background-color: white;
+}
+
+#menu div{
+  height: 45px;
+  width: 100%;
+}
+
+/*botones*/
+
+.btnM {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	transition: background-color .2s;
+  padding-bottom: 8px;
+}
+
+.btnM:hover {
+	cursor: pointer;
+	transition: background-color .4s;
+}
+
+#btnHome:hover {
+	color: rgb(65, 44, 0);
+	background-color: rgba(179, 153, 7, 0.952); 
+}
+
+#btnHome {
+  color: rgba(179, 153, 7, 0.952);
+	border-top: 5px solid rgba(179, 153, 7, 0.952); ;
+	padding-bottom: 5px;
+}
+
+#btnBriefcase {
+	color: rgba(179, 153, 7, 0.952);
+	border-top: 5px solid rgba(179, 153, 7, 0.952) ;
+	padding-bottom: 5px;
+}
+
+#btnBriefcase:hover {
+	color:  rgb(65, 44, 0);
+	background-color: rgba(179, 153, 7, 0.952); 
+}
+
+#btnAboutMe {
+	color: rgba(199, 178, 58, 0.931);
+	border-top: 5px solid rgba(199, 178, 58, 0.931);
+
+}
+
+#btnAboutMe:hover {
+	color: rgb(65, 44, 0);
+	background-color:rgba(199, 178, 58, 0.931); 
+}
+
+#btnContact {
+	color: rgba(199, 178, 58, 0.931);
+	border-top: 5px solid rgba(199, 178, 58, 0.931);
+
+}
+
+#btnContact:hover {
+	color: rgb(65, 44, 0);
+	background-color: rgba(199, 178, 58, 0.931); 
+}
+
+/*secciones*/
+#inicio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 100px;
+}
+
+.intro h5, .intro {
+  padding-left: 10px;
+}
+
+.foto img {
+	width: 230px;
+	height: 300px;
+  border-radius: 35%;
+  object-fit: cover;
+  margin: 20px;
+}
+
+
+.foto {
+  padding: 10px;
+  margin-bottom: -30px;
+}
+
+
+.intro {
+  text-align: left;
+}
+
+/*portafolio*/
+#portafolio {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: 80px;
+}
+
+/*sobre mi*/
+#sobreMi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;  
+}
+
+#sobreMi h4, #sobreMi h5 {
+  color: rgb(143, 106, 6);
+} 
+
+#sobreMi a {
+  color: rgb(42, 33, 13) !important;
+} 
+
+#sobreMi a:hover {
+  color: rgb(143, 106, 6) !important;
+}
+
+#sobreMi #pdf a svg {
+  font-size: 30px;
+  padding-left: 10px;
+  width: 45px;
+}
+
+#sobreMi .der {
+  width: 75%;
+}
+
+/*contacto*/
+#contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+#contacto .izq {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contacto p svg {
+  color: rgb(107, 59, 4) !important;
+}
+
+#contacto .izq p {
+  margin-bottom: 1em;
+}
+
+#contacto a {
+  color: rgb(143, 106, 6) !important;
+  text-decoration: none;
+}
+
+#contacto a:hover {
+  color:rgb(80, 60, 4)  !important;
+}
+
+/*carrusel*/
+.carousel .carousel-item {
+  position: relative;   
+  margin-top: -20px;
+  min-width: 240px;
+  min-height: 240px;
+  max-width: 450px;
+  max-height: 450px;
+}
+
+.carousel .carousel-item img{
+  width:100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.indicator-item {
+  background-color:  rgb(75, 49, 0) !important;
+  height: 12px !important;
+  width: 12px !important;
+}
+
+.indicator-item.active {
+  background-color: rgb(75, 49, 0) !important;
+  height: 14px !important;
+  width: 14px !important;
+}
+
+.overlay {
+  background-color: rgb(49, 21, 2);
+  position: absolute;
+  bottom: 0px;
+  color: white;
+  width: 100%;
+  min-height: 100px;
+  padding: 0 20px;
+}
+
+.overlay span {
+  color: #42C8C3;
+}
+
+.icons {
+  font-size: 60px;
+}
+
+@media only screen {
+  body {
+    background-position: 40% 100%;
+  }
+  .carousel {
+    height: 60vh !important;
+  }
+  .carousel .carousel-item {
+    height: 70% !important;
+    width:70% !important; 
+  }
+  svg {
+    width: 100%;
+    max-width: 700px;
+    height: 100%;
+    margin-top: 6%;
+  }
+  .overlay {
+    height: 70%;
+  }
+  .contactText {
+    text-align: center;
+    margin-top: 0;
+    z-index: 10;
+  }
+  #sobreMi {
+    width: 100%;
+    margin-bottom: 80px;
+    margin-top: 350px;
+  }
+  #inicio {
+    margin-top: 50px;
+  }
+  .animationInit {
+    margin-bottom: -20px;
+  }
+}
+
+@media only screen and (min-width: 650px) {
+  body {
+    background-position: 40% 30%;
+  }
+  .carousel {
+    height: 70vh !important;
+  }
+   .carousel .carousel-item {
+    width:40% !important; 
+    height: 80% !important;
+  }
+  svg {
+    width: 80%;
+    height: 80%;
+    margin-top: 0;
+  }
+  .overlay {
+    height: 30%;
+  }
+  .contactText {
+    margin-top: -30px;
+  }
+  #sobreMi {
+    width: 70%;
+    margin-bottom: 100px;
+    margin-top: 0;
+    min-width: 900px;
+  }
+  .contacto {
+    margin-bottom: 80px;
+  }
+  #inicio {
+    margin-top: 0;
+  }
+  .animationInit {
+    margin-bottom: -0;
+  }
+}
+
+/*animacion contacto*/
+svg {
+  position: relative;
+  font: 20em Ubuntu;
+  letter-spacing: 0.15em;
+}
+
+svg text {
+  fill: rgb(107, 59, 4);
+  color: rgb(42, 33, 13) ;
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 3s ease-out;
+}
+
+@keyframes stroke-offset {
+  0% {
+    fill-opacity: 0;
+    stroke-width: 0;
+    stroke-dasharray: 0% 100%;
+  }
+  25% {
+    stroke-width: 3px;
+  }
+  50% {
+    fill-opacity: 0;
+  }
+  75% {
+    stroke-width: 3px;
+  }
+  100% {
+    stroke-width: 0;
+  }
+}
+
+/*animacion inicio*/
+.animationInit svg {
+  position: relative;
+  font: 8em Ubuntu;
+  letter-spacing: 0.15em;
+}
+
+.animationInit svg text {
+  fill:#906c19;
+  stroke: rgb(65, 44, 0);
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 3s ease-out;
+}
+
+.apellido svg {
+  position: relative;
+  font: 4.1em Ubuntu;
+  letter-spacing: 0.05em;
+}
+
+.apellido svg text {
+  fill:#906c19;
+  stroke: rgb(65, 44, 0);
+  fill-opacity: 1;
+  stroke-width: 0;
+  stroke-dasharray: 100% 0;
+  animation: stroke-offset 3s ease-out;
+}
