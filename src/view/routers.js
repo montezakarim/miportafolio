@@ -8,7 +8,7 @@ export const changeView = (routers) => {
       break;
     case '#/contact': container.appendChild(components.contact());
       break;
-    case '#/portafolio': container.appendChild(components.contact());
+    case '#/portafolio': container.appendChild(components.portafolio());
       break;
     case '#/aboutme': container.appendChild(components.aboutme());
       break;

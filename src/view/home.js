@@ -2,10 +2,7 @@ export default () => {
   const containerHome = document.createElement('div');
   const templateHome = `
      <section id="inicio"> 
-        <div class="foto">
-        <img src="img/perfil1.jpg" >
-      </div>
-      <div class="intro">
+       <div class="intro">
         <div class="animationInit">
           <svg viewBox="82 -45 510 102">
           <text text-anchor="middle" x="60%" y="50%">Karim</text>
@@ -24,3 +21,7 @@ export default () => {
   containerHome.innerHTML = templateHome;
   return containerHome;
 };
+
+/* <div class="foto">
+<img src="img/perfil1.jpg" >
+</div> */
