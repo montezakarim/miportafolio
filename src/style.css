@@ -8,12 +8,11 @@
 
 body {
 	font-family: 'Ubuntu', sans-serif;
-	color:  rgb(65, 44, 0);
-  /* background-image: url('../img/fondo-portafolio.jpg'); */
+	color: #47167d;
   background-size: cover;
   transition: background-image 1s;
   background-attachment: fixed;
-  background-color: #f3efb8;
+  background-color: lightgray;
 } 
 
 #container {
@@ -21,7 +20,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 
 #menu {
@@ -30,7 +29,8 @@ body {
   justify-content: space-around;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: white;
+  background-color: lightgrey;
+  
 }
 
 #menu div{
@@ -54,47 +54,46 @@ body {
 }
 
 #btnHome:hover {
-	color: rgb(65, 44, 0);
-	background-color: rgba(179, 153, 7, 0.952); 
+	background-color: #765996; 
 }
 
 #btnHome {
-  color: rgba(179, 153, 7, 0.952);
-	border-top: 5px solid rgba(179, 153, 7, 0.952); ;
+  color: #765996; 
+	border-top: 5px solid #765996; 
 	padding-bottom: 5px;
 }
 
 #btnBriefcase {
-	color: rgba(179, 153, 7, 0.952);
-	border-top: 5px solid rgba(179, 153, 7, 0.952) ;
+	color: #765996; 
+	border-top: 5px solid #765996; 
 	padding-bottom: 5px;
 }
 
 #btnBriefcase:hover {
-	color:  rgb(65, 44, 0);
-	background-color: rgba(179, 153, 7, 0.952); 
+	background-color: #765996; 
 }
 
 #btnAboutMe {
-	color: rgba(199, 178, 58, 0.931);
-	border-top: 5px solid rgba(199, 178, 58, 0.931);
+	color: #ce4b1b;
+	border-top: 5px solid #ce4b1b;
 
 }
 
 #btnAboutMe:hover {
-	color: rgb(65, 44, 0);
-	background-color:rgba(199, 178, 58, 0.931); 
+	background-color:#ce4b1b; 
 }
 
 #btnContact {
-	color: rgba(199, 178, 58, 0.931);
-	border-top: 5px solid rgba(199, 178, 58, 0.931);
+	color: #ce4b1b;
+	border-top: 5px solid #ce4b1b;
 
 }
 
 #btnContact:hover {
-	color: rgb(65, 44, 0);
-	background-color: rgba(199, 178, 58, 0.931); 
+	background-color: #ce4b1b; 
+}
+a:hover{
+  color: white;
 }
 
 /*secciones*/
@@ -111,13 +110,16 @@ body {
 .intro h5, .intro {
   padding-left: 10px;
 }
-
+.developer{
+  font-size: 2em;
+  color: #ce4b1b;
+}
 .foto img {
-  width: 170px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   border-radius: 80%;
   object-fit: cover;
-  /* margin: 20px; */
+  margin: 20px;
 }
 
 
@@ -128,7 +130,7 @@ body {
 
 
 .intro {
-  text-align: left;
+  text-align: center;
 }
 
 /*portafolio*/
@@ -139,7 +141,8 @@ body {
   flex-wrap: wrap;  
   height: 80vh;
   width: 100%;
-  padding: 10px;
+  padding: 30px;
+  position: relative;
   margin-bottom: 80px;
 }
 
@@ -149,16 +152,22 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;  
-  padding:10px;
-  margin: 10px;
+  padding:30px;
+  margin: 20px;
 }
 
 #sobreMi h4, #sobreMi h5 {
-  color: rgb(143, 106, 6);
+  color: #b13103;
+  font-size: 2em;
+} 
+#sobreMi p {
+  color: #47167d !important;
+  text-align: justify;
+  font-size: 1em;
 } 
 
 #sobreMi a {
-  color: rgb(42, 33, 13) !important;
+  color: #47167d !important;
 } 
 
 #sobreMi a:hover {
@@ -172,12 +181,10 @@ body {
 }
 
 #sobreMi .der {
-  width: 75%;
+  width: 100%;
 }
-/* #sobreMi .izq {
-  width: 75%;
-  justify-content: right;
-} */
+
+
 /*contacto*/
 #contacto {
   display: flex;
@@ -205,18 +212,21 @@ body {
 }
 
 #contacto a {
-  color: rgb(143, 106, 6) !important;
+  color: #47167d !important;
   text-decoration: none;
 }
 
 #contacto a:hover {
-  color:rgb(80, 60, 4)  !important;
+  color:rgb(143, 106, 6)  !important;
 }
 
 /*carrusel*/
 .carousel .carousel-item {
-  position: relative;   
-  margin-top: -20px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  position: relative;
+  margin-top: 20px;
   min-width: 240px;
   min-height: 240px;
   max-width: 450px;
@@ -224,35 +234,21 @@ body {
 }
 
 .carousel .carousel-item img{
-  width:70%;
-  height: 50%;
-  object-fit: cover;
-}
-
-.indicator-item {
-  background-color:  rgb(75, 49, 0) !important;
-  height: 12px !important;
-  width: 12px !important;
-}
-
-.indicator-item.active {
-  background-color: rgb(75, 49, 0) !important;
-  height: 14px !important;
-  width: 14px !important;
+  width: 95%;
+  height: 70%; 
 }
 
 .overlay {
-  background-color: rgba(20, 20, 20, .9);
+  background-color: rgba(29, 29, 29, 0.9);
   position: absolute;
-  bottom: 0px;
-  color: white;
+  bottom: 20%;
+  color: lightgrey;
   font-size: 12px;
-  width: 100%;
-  min-height: 40px;
+  width: 95%;
 }
 
 .overlay span {
-  color: #42C8C3;
+  color: rgb(143, 106, 6);
 }
 
 .icons {
@@ -265,6 +261,8 @@ body {
   }
   .carousel {
     height: 60vh !important;
+      display: flex;
+
   }
   .carousel .carousel-item {
     height: 70% !important;
@@ -277,7 +275,7 @@ body {
     margin-top: 6%;
   }
   .overlay {
-    height: 100%;
+    height: 10%;
   }
   .contactText {
     text-align: center;
@@ -315,10 +313,14 @@ body {
     margin-top: 0;
   }
   .overlay {
-    height: 30%;
+    height: 10%;
   }
   .contactText {
     margin-top: -30px;
+  }
+  .foto img {
+    width: 170px;
+    height: 200px;
   }
   #sobreMi {
     width: 70%;
@@ -326,6 +328,10 @@ body {
     margin-top: 0;
     min-width: 900px;
   }
+  #sobreMi p {
+    font-size: 1.2em;
+  } 
+
   .contacto {
     margin-bottom: 80px;
   }
@@ -345,12 +351,12 @@ svg {
 }
 
 svg text {
-  fill: rgb(107, 59, 4);
-  color: rgb(42, 33, 13) ;
+  fill: #b13103;
+  color: #ff914d ;
   fill-opacity: 1;
   stroke-width: 0;
   stroke-dasharray: 100% 0;
-  animation: stroke-offset 3s ease-out;
+  animation: stroke-offset 1s ease-out;
 }
 
 @keyframes stroke-offset {
@@ -376,17 +382,17 @@ svg text {
 /*animacion inicio*/
 .animationInit svg {
   position: relative;
-  font: 8em Ubuntu;
-  letter-spacing: 0.15em;
+  font: 10em Ubuntu;
+  letter-spacing: 0.05em;
 }
 
 .animationInit svg text {
-  fill:#906c19;
-  stroke: rgb(65, 44, 0);
+  fill:#330464;
+  stroke: #47167d;
   fill-opacity: 1;
   stroke-width: 0;
   stroke-dasharray: 100% 0;
-  animation: stroke-offset 3s ease-out;
+  animation: stroke-offset 2s ease-out;
 }
 
 .apellido svg {
@@ -396,10 +402,10 @@ svg text {
 }
 
 .apellido svg text {
-  fill:#906c19;
-  stroke: rgb(65, 44, 0);
+  fill:#330464;
+  stroke: #47167d;
   fill-opacity: 1;
   stroke-width: 0;
   stroke-dasharray: 100% 0;
-  animation: stroke-offset 3s ease-out;
+  animation: stroke-offset 2s ease-out;
 }
