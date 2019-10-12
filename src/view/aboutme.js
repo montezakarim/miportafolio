@@ -8,11 +8,10 @@ export default () => {
       </div>
     </div>
     <div class="der">
-      <h4>Creatividad y persistencia</h4>
+      <h4>Sobre Mi</h4>
       <br>
       <p>
-        Soy Front End Developer, egresada de Laboratoria con background en Administración de empresas. Apasionada, creativa, organizada y responsable. Me encanta el mundo tech  y desde a que empecé a programar y a construir plataformas web me motiva a estar en constante aprendizaje, especializarme y además de mejorar mis habilidades asumiendo nuevos retos profesionales. Mas adeante quiero ser desarrolladora full-stack y liderar proyectos. Me encataría ser parte de un equipo que busca dar las mejores soluciones a los problemas y mejorar la calidad de vida de las personas paa un mendo mejor.
-        Algo curioso sobre mí que me encanta disfrutar de mi tiempo libre en caminatas y con la mejor compañia "Coffee" mi perrito.
+        Soy Karim Monteza Front End Developer, egresada de Laboratoria con background en Administración de empresas. Apasionada, creativa, organizada y responsable. Me encanta el mundo tech  y desde a que empecé a programar y a construir plataformas web me motiva a estar en constante aprendizaje, especializarme y además de mejorar mis habilidades asumiendo nuevos retos profesionales. Mas adeante quiero ser desarrolladora full-stack y liderar proyectos. Me encataría ser parte de un equipo que busca dar las mejores soluciones a los problemas y mejorar la calidad de vida de las personas para un mendo mejor.
       </p>
       <br>
       <br>
