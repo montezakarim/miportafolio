@@ -9,8 +9,6 @@
 body {
 	font-family: 'Ubuntu', sans-serif;
 	color: #47167d;
-  background-size: cover;
-  transition: background-image 1s;
   background-attachment: fixed;
   background-color: lightgray;
 } 
@@ -21,7 +19,11 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 40px;
+  background-image: url(./img/developer.png);
+  transition: background-image 1s;
+  background-size: cover;
 }
+
 
 #menu {
   position: fixed;
@@ -29,13 +31,14 @@ body {
   justify-content: space-around;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: lightgrey;
+  background-color:  rgba(255, 255, 255, 0.678);
   
 }
 
 #menu div{
   height: 45px;
   width: 100%;
+  
 }
 
 /*botones*/
@@ -46,6 +49,10 @@ body {
   align-items: center;
 	transition: background-color .2s;
   padding-bottom: 8px;
+}
+.s-sub{
+  text-decoration: none;
+  font-size: 1.2em;
 }
 
 .btnM:hover {
@@ -98,13 +105,15 @@ a:hover{
 
 /*secciones*/
 #inicio {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  padding: 10px 20px;
-  margin-bottom: 100px;
+  width: 97%;
+  padding: 3%;
+  margin: 1.5%;
+  background-color: rgba(255, 255, 255, 0.678);
+  border-radius: 25%;
 }
 
 .intro h5, .intro {
@@ -115,19 +124,17 @@ a:hover{
   color: #ce4b1b;
 }
 .foto img {
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 107px;
   border-radius: 80%;
   object-fit: cover;
-  margin: 20px;
 }
 
 
 .foto {
-  padding: 10px;
-  margin-bottom: -30px;
+  padding: 1.8%;
+  margin: auto;
 }
-
 
 .intro {
   text-align: center;
@@ -137,13 +144,10 @@ a:hover{
 #portafolio {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;  
-  height: 80vh;
-  width: 100%;
-  padding: 30px;
-  position: relative;
-  margin-bottom: 80px;
+  flex-wrap: wrap;
+  height: 100vh;
+  padding: 2%;
+
 }
 
 /*sobre mi*/
@@ -151,11 +155,11 @@ a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;  
-  padding:30px;
-  margin: 20px;
+  flex-direction: column;
+  padding: 2%;
+  margin: auto;
+ 
 }
-
 #sobreMi h4, #sobreMi h5 {
   color: #b13103;
   font-size: 2em;
@@ -163,7 +167,7 @@ a:hover{
 #sobreMi p {
   color: #47167d !important;
   text-align: justify;
-  font-size: 1em;
+  font-size: 1.1em;
 } 
 
 #sobreMi a {
@@ -174,6 +178,15 @@ a:hover{
   color: rgb(143, 106, 6) !important;
 }
 
+#pdf a {
+  color: #b13103 !important;
+  font-size: 1.5em; 
+}
+#pdf a:hover{
+  color: rgb(143, 106, 6) !important;
+}
+
+
 #sobreMi #pdf a svg {
   font-size: 30px;
   padding-left: 10px;
@@ -182,7 +195,24 @@ a:hover{
 
 #sobreMi .der {
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.678);
+  border-radius: 3%;
+  text-align: center;
+  padding: 3%;
 }
+.habilidad {
+  width: 10%
+}
+.equipo {
+  background-image: url(img/equipo.png);
+}
+.comunicacion {
+  background-image: url(img/comunicacion.png);
+}
+.scrum {
+  background-image: url(img/scrum.png);
+}
+
 
 
 /*contacto*/
@@ -193,6 +223,7 @@ a:hover{
   align-items: center;
   width: 100%;
   margin-bottom: 60px;
+  background-color: rgba(255, 255, 255, 0.376);
 }
 
 #contacto .izq {
@@ -221,30 +252,36 @@ a:hover{
 }
 
 /*carrusel*/
+.carousel {
+  height: 61vh !important;
+}
 .carousel .carousel-item {
   display: flex;
   justify-content: center;
   justify-items: center;
+  flex-wrap: wrap;
   position: relative;
-  margin-top: 20px;
-  min-width: 240px;
-  min-height: 240px;
-  max-width: 450px;
-  max-height: 450px;
+  margin: 1%;
+  min-width: 97%;
+  min-height: 52vh;
+  padding: 2%;
 }
 
 .carousel .carousel-item img{
-  width: 95%;
-  height: 70%; 
+  width: 90%;
+  height: 35vh;
+  margin-top: 4%;
 }
 
 .overlay {
   background-color: rgba(29, 29, 29, 0.9);
   position: absolute;
-  bottom: 20%;
-  color: lightgrey;
-  font-size: 12px;
-  width: 95%;
+  bottom: 2%;
+  color: white;
+  font-size: 0.9em;
+  width: 87%;
+  padding: 2%;
+  height: 26%;
 }
 
 .overlay span {
@@ -259,33 +296,22 @@ a:hover{
   body {
     background-position: 40% 100%;
   }
-  .carousel {
-    height: 60vh !important;
-      display: flex;
 
-  }
-  .carousel .carousel-item {
-    height: 70% !important;
-    width:70% !important; 
-  }
   svg {
     width: 100%;
     max-width: 700px;
     height: 100%;
     margin-top: 6%;
   }
-  .overlay {
-    height: 10%;
-  }
-  .contactText {
+   .contactText {
     text-align: center;
     margin-top: 0;
     z-index: 10;
   }
+
   #sobreMi {
     width: 100%;
-    margin-bottom: 80px;
-    margin-top: 350px;
+    margin-top: 90%;
   }
   #inicio {
     margin-top: 50px;
@@ -299,32 +325,43 @@ a:hover{
   body {
     background-position: 40% 30%;
   }
-  .carousel {
-    height: 100vh!important;
-  }
-   .carousel .carousel-item {
-    width:40% !important; 
-    height: 80% !important;
 
+  .carousel {
+    height: 70vh !important;
   }
+
+  .carousel .carousel-item {
+    min-height: 64vh;
+  }
+  
+  .carousel .carousel-item img{
+    width: 90.7%;
+    height: 53vh;
+    margin-top: 4%;
+  }
+  
+  .overlay {
+    height: 17%;
+    bottom: -12%;
+  }
+
   svg {
-    width: 80%;
-    height: 80%;
+    width: 100%;
     margin-top: 0;
   }
-  .overlay {
-    height: 10%;
-  }
+ 
   .contactText {
     margin-top: -30px;
   }
+
   .foto img {
     width: 170px;
     height: 200px;
   }
+
   #sobreMi {
     width: 70%;
-    margin-bottom: 10px;
+    margin-bottom: -126px;
     margin-top: 0;
     min-width: 900px;
   }
@@ -337,11 +374,16 @@ a:hover{
   }
   #inicio {
     margin-top: 0;
-  }
-  .animationInit {
-    margin-bottom: -0;
+    width: 97%;
+    padding: 13% 8% 15% 6%;
+    background-color: rgba(255, 255, 255, 0.678);
+    border-radius: 5%;
   }
 }
+  
+  .animationInit {
+    margin-bottom: -0;
+  } 
 
 /*animacion contacto*/
 svg {
@@ -382,7 +424,7 @@ svg text {
 /*animacion inicio*/
 .animationInit svg {
   position: relative;
-  font: 10em Ubuntu;
+  font: 15em Ubuntu;
   letter-spacing: 0.05em;
 }
 
@@ -397,8 +439,8 @@ svg text {
 
 .apellido svg {
   position: relative;
-  font: 4.1em Ubuntu;
-  letter-spacing: 0.05em;
+  font: 4.5em Ubuntu;
+  letter-spacing: 0.0em;
 }
 
 .apellido svg text {

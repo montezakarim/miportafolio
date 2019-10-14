@@ -4,7 +4,7 @@ export default () => {
      <section id="inicio"> 
        <div class="intro">
         <div class="animationInit">
-          <svg viewBox="82 -45 600 200">
+          <svg viewBox="82 -45 800 250">
             <text text-anchor="middle" x="60%" y="50%">Karim</text>
           </svg>
         </div>
