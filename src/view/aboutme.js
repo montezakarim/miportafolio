@@ -3,7 +3,7 @@ export default () => {
   const templateAboutme = `
   <section id="sobreMi">
     <div class="foto">
-      <img src="img/perfil1.jpg" >
+      <img src="img/perfil1.png">
     </div>
     <div class="der">
       <h4>Sobre Mí</h4>

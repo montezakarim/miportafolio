@@ -11,6 +11,9 @@ body {
 	color: #47167d;
   background-attachment: fixed;
   background-color: lightgray;
+  background-image: url(./img/developer3.jpg);
+  transition: background-image 1s;
+  background-size: cover;
 } 
 
 #container {
@@ -19,9 +22,9 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 40px;
-  background-image: url(./img/developer.png);
+  /* background-image: url(./img/developer.png);
   transition: background-image 1s;
-  background-size: cover;
+  background-size: cover; */
 }
 
 
@@ -149,6 +152,19 @@ a:hover{
   padding: 2%;
 
 }
+.column{
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* position: relative; */
+  margin: 1%;
+  min-width: 97%;
+  min-height: 52vh;
+  padding: 2%;
+  background-color: rgba(199, 195, 195, 0.322);
+}
 
 /*sobre mi*/
 #sobreMi {
@@ -223,7 +239,7 @@ a:hover{
   align-items: center;
   width: 100%;
   margin-bottom: 60px;
-  background-color: rgba(255, 255, 255, 0.376);
+  background-color: rgba(255, 255, 255, 0.664);
 }
 
 #contacto .izq {
@@ -255,37 +271,24 @@ a:hover{
 .carousel {
   height: 61vh !important;
 }
-.carousel .carousel-item {
-  display: flex;
-  justify-content: center;
-  justify-items: center;
-  flex-wrap: wrap;
-  position: relative;
-  margin: 1%;
-  min-width: 97%;
-  min-height: 52vh;
-  padding: 2%;
-}
 
 .carousel .carousel-item img{
-  width: 90%;
+  width: 100%;
   height: 35vh;
   margin-top: 4%;
 }
 
 .overlay {
   background-color: rgba(29, 29, 29, 0.9);
-  position: absolute;
-  bottom: 2%;
+  position: relative;
   color: white;
   font-size: 0.9em;
-  width: 87%;
   padding: 2%;
   height: 26%;
 }
 
 .overlay span {
-  color: rgb(143, 106, 6);
+  color: rgb(231, 185, 59);
 }
 
 .icons {
@@ -330,19 +333,20 @@ a:hover{
     height: 70vh !important;
   }
 
-  .carousel .carousel-item {
+  /* .carousel .carousel-item {
     min-height: 64vh;
-  }
+  } */
   
   .carousel .carousel-item img{
-    width: 90.7%;
-    height: 53vh;
-    margin-top: 4%;
+    width: 60%;
+    height: 48vh;
+    margin-top: 2%;
+    margin-left: 14%;
   }
   
   .overlay {
-    height: 17%;
-    bottom: -12%;
+    width: 90%;
+    left: -5%;
   }
 
   svg {
@@ -361,7 +365,7 @@ a:hover{
 
   #sobreMi {
     width: 70%;
-    margin-bottom: -126px;
+    margin-bottom: -178px;
     margin-top: 0;
     min-width: 900px;
   }
