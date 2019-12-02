@@ -7,7 +7,7 @@ export default () => {
           <text text-anchor="middle" x="50%" y="50%">Contáctame!</text>
         </svg>
         <div class="contactText">
-          <p><i class="fa fa-mobile"></i> +51 922 570 898</p>
+          <p><i class="fa fa-mobile"></i> +51 924 791 712</p>
           <p><a href="mailto: kmonteza@hotmail.com" target="_blank"><i class="fa fa-envelope"></i> kmonteza@hotmail.com</a></p>
           <p><a href="https://github.com/montezakarim" target="_blank"><i class="fab fa-github"></i> github.com/montezakarim</a></p>
           <p><a href="https://www.linkedin.com/in/karim-monteza/"><i class="fab fa-linkedin"></i> linkedin.com/in/karim-monteza</a></p> 
